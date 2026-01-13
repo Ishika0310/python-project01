@@ -1,0 +1,25 @@
+def matchstick_game():
+    sticks = 21
+    print("welcome to 21 matchstick game!")
+    print("Rules: There are 21 matchstick. Each turn,you can pick 1-4.")
+    print("Whoever is forced to pick the last matchstick loses. \n")
+    while sticks> 1:
+        player=int(input(f"sticks left: {sticks}.Pick 1-4: "))
+        if player<1 or player>4 or player>sticks:
+            print("invalid mave,try again!")
+            continue
+        sticks-=player
+        if sticks==1:
+          print("only 1 stick left.You left it for computer. You win! ")
+          break
+        comp=5-player
+        if comp>sticks:
+          comp=sticks-1
+        sticks-=comp
+        print(f"computer picks{comp}. Sticks left:{sticks}")
+        if sticks==1:
+         print("only 1 stick left.Computer left it for you. You lose!")
+         break
+# To play
+matchstick_game()
+    

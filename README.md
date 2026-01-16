@@ -52,3 +52,79 @@ The computer always picks 5 - player_choice
 This strategy helps the computer maintain control of the game
 
 Input validation ensures only valid moves (1–4 sticks) are allowed
+
+# 🎮 Tic Tac Toe Game (Python Tkinter)
+
+A simple two-player Tic Tac Toe GUI application built using Python and Tkinter.
+This project demonstrates basic GUI programming, event handling, and game logic in Python.
+
+📌 Features
+
+🧑‍🤝‍🧑 Two-player mode (Player X vs Player O)
+
+✍️ Player name input
+
+🖥️ Interactive GUI using Tkinter
+
+🏆 Automatic winner detection
+
+🤝 Tie (draw) detection
+
+🚫 Prevents overwriting already clicked buttons
+
+🎨 Simple and colorful interface
+
+🛠️ Technologies Used
+
+Python 3
+
+Tkinter (Standard Python GUI library)
+
+No external libraries are required.
+
+🚀 How to Run the Project
+
+1️⃣ Prerequisites
+
+Make sure Python is installed:
+
+    python --version
+
+2️⃣ Clone or Download the Repository
+git clone <repository-url>
+cd tic-tac-toe-tkinter
+
+3️⃣ Run the Program
+python Tic_Tac_Toe.py
+
+🎮 How to Play
+
+1- Enter Player 1 and Player 2 names.
+
+2- Player 1 starts with X, Player 2 plays O.
+
+3- Click on any empty cell to make a move.
+
+4- The game automatically:
+
+   - Declares the winner 🏆
+
+   - Detects a tie 🤝
+
+   - Disables buttons after game ends
+
+🧠 Game Logic Overview
+
+- Uses a 9-button grid to represent the board.
+
+- Tracks turns using a boolean flag.
+
+- Checks all possible winning combinations:
+
+   - Rows
+
+   - Columns
+
+   - Diagonals
+
+- Displays result using tkinter.messagebox.

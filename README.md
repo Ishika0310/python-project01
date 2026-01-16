@@ -91,8 +91,7 @@ Make sure Python is installed:
     python --version
 
 2️⃣ Clone or Download the Repository
-git clone <repository-url>
-cd tic-tac-toe-tkinter
+git clone https://github.com/Ishika0310/python-project01/blob/main/Tic_Tac_Toe.py
 
 3️⃣ Run the Program
 python Tic_Tac_Toe.py
